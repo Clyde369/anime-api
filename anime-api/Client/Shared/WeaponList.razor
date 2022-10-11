@@ -1,28 +1,7 @@
 ﻿<ul>
-    @foreach (var weapon in Weapons)
-   {
-       <div>
-            <h1>@weapon.Name</h1>
-       </div>
-   }
+    Weapons
 </ul>
 
 @code {
-    private static List<Weapon> Weapons = new List<Weapon>{
-        new Weapon {
-            Id = "2",
-            Name = "dogshit",
-            Description = "dogshit"
-        },
-        new Weapon {
-            Id = "3",
-            Name = "dogshit1",
-            Description = "dogshit"
-        },
-        new Weapon {
-            Id = "5",
-            Name = "dogshit2",
-            Description = "dogshit"
-        }
-    };
+
 }

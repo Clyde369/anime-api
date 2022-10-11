@@ -11,7 +11,5 @@
         public string Weapon { get; set; } = string.Empty;
         public string WeaponImgUrl { get; set; } = String.Empty;
         public int Age { get; set; }
-
-
     }
 }
