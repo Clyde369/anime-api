@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.ResponseCompression;
+global using anime_api.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 

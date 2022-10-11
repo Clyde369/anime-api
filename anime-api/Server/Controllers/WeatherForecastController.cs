@@ -1,4 +1,3 @@
-using anime_api.Shared;
 using Microsoft.AspNetCore.Mvc;
 
 namespace anime_api.Server.Controllers
