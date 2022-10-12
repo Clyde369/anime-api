@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Shared\anime-apianime_apiAnimeApi.Shared.csproj" />
+    <ProjectReference Include="..\Shared\anime-api.Shared.csproj" />
   </ItemGroup>
 
 </Project>
