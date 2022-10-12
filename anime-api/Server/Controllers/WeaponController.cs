@@ -9,17 +9,20 @@ namespace animeapi.Server.Controllers
     public class WeaponController : ControllerBase
     {
         private static List<Weapon> Weapons = new List<Weapon>{
-            new Weapon {
+            new Weapon 
+            {
                 Id = "2",
                 Name = "dogshit",
                 Description = "dogshit"
             },
-            new Weapon {
+            new Weapon 
+            {
                 Id = "3",
                 Name = "dogshit1",
                 Description = "dogshit"
             },
-            new Weapon {
+            new Weapon 
+            {
                 Id = "5",
                 Name = "dogshit2",
                 Description = "dogshit"
