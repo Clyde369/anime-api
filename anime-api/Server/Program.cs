@@ -1,4 +1,4 @@
-global using anime_api.Shared;
+//global using anime_api.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
