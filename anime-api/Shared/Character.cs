@@ -3,7 +3,6 @@
     public class Character
     {
         public int Id { get; set; }
-        public string Slug { get; set; }
         public string Name { get; set; }
         public string ImageUrl { get; set; } = String.Empty;
         public int Tier { get; set; }

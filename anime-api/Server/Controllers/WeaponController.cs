@@ -12,19 +12,19 @@ namespace animeapi.Server.Controllers
         {
             new Weapon 
             {
-                Id = "2",
+                Id = 2,
                 Name = "dogshit",
                 Description = "dogshit"
             },
             new Weapon 
             {
-                Id = "3",
+                Id = 3,
                 Name = "dogshit1",
                 Description = "dogshit"
             },
             new Weapon 
             {
-                Id = "5",
+                Id = 5,
                 Name = "dogshit2",
                 Description = "dogshit"
             }
