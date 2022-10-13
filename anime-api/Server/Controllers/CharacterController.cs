@@ -46,7 +46,7 @@ namespace animeapi.Server.Controllers
         };
 
         [HttpGet]
-        public async Task<IActionResult> GetChar()
+        public async Task<ActionResult<List<Character>>> GetChar()
         {
             return Ok(Characters);
         }

@@ -8,7 +8,8 @@ namespace animeapi.Server.Controllers
     [ApiController]
     public class WeaponController : ControllerBase
     {
-        private static List<Weapon> Weapons = new List<Weapon>{
+        private static List<Weapon> Weapons = new List<Weapon>
+        {
             new Weapon 
             {
                 Id = "2",
@@ -29,7 +30,7 @@ namespace animeapi.Server.Controllers
             }
         };
         [HttpGet]
-        public async Task<IActionResult> GetWeapon()
+        public async Task<ActionResult<List<Weapon>>> GetWeapon()
         {
             return Ok(Weapons);
         }

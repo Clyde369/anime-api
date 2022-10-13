@@ -1,7 +1,24 @@
-﻿<ul>
+﻿@using animeapi.Shared
+@inject HttpClient Http
 
-</ul>
+
+<div>
+    @foreach (var weapon in Weapons)
+   {
+       <div>
+           <h1>@weapon.Name</h1>
+       </div>
+   }
+</div>
 
 @code {
+    private static List<Weapon> Weapons = new List<Weapon>();
 
+    protected override async Task OnInitializedAsync()
+    {
+        var result = await Http.GetFromJsonAsync<List<Weapon>>("api/Weapon");
+        if(result != null){
+            Weapons = result;
+        }
+    }
 }

@@ -1,7 +1,23 @@
-﻿<ul>
+﻿@using animeapi.Shared
+@inject HttpClient Http
 
+<ul>
+    @foreach (var character in Characters)
+   {
+       <div>
+           <img src="@character.ImageUrl" />
+           <p>@character.Name</p>
+       </div>
+   }
 </ul>
 
 @code {
-   
+    private static List<Character> Characters = new List<Character>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var result = await Http.GetFromJsonAsync<List<Character>>("api/Character");
+        if (result != null)
+            Characters = result;
+    }
 }
