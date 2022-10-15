@@ -11,8 +11,8 @@ using animeapi.Server.Data;
 namespace animeapi.Server.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20221013192411_WeaponAndCharacterSeeding")]
-    partial class WeaponAndCharacterSeeding
+    [Migration("20221015051601_CreateInitial")]
+    partial class CreateInitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -94,47 +94,6 @@ namespace animeapi.Server.Migrations
                             Tier = 3,
                             Weapon = "sharper butter knife",
                             WeaponImgUrl = "https://cdn11.bigcommerce.com/s-cykw02w8qi/images/stencil/1280x1280/products/8780/11530/1251183232773__99896__69563.1628110515.jpg?c=1"
-                        });
-                });
-
-            modelBuilder.Entity("animeapi.Shared.Weapon", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Weapons", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 2,
-                            Description = "dogshit",
-                            Name = "dogshit"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "dogshit",
-                            Name = "dogshit1"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Description = "dogshit",
-                            Name = "dogshit2"
                         });
                 });
 #pragma warning restore 612, 618

@@ -47,30 +47,30 @@ namespace animeapi.Server.Data
                      }
                  );
 
-            modelBuilder.Entity<Weapon>().ToTable("Weapons").HasData(
-                    new Weapon
-                    {
-                        Id = 2,
-                        Name = "dogshit",
-                        Description = "dogshit"
-                    },
-                    new Weapon
-                    {
-                        Id = 3,
-                        Name = "dogshit1",
-                        Description = "dogshit"
-                    },
-                    new Weapon
-                    {
-                        Id = 5,
-                        Name = "dogshit2",
-                        Description = "dogshit"
-                    }
-                );
+            //modelBuilder.Entity<Weapon>().ToTable("Weapons").HasData(
+            //        new Weapon
+            //        {
+            //            Id = 2,
+            //            Name = "dogshit",
+            //            Description = "dogshit"
+            //        },
+            //        new Weapon
+            //        {
+            //            Id = 3,
+            //            Name = "dogshit1",
+            //            Description = "dogshit"
+            //        },
+            //        new Weapon
+            //        {
+            //            Id = 5,
+            //            Name = "dogshit2",
+            //            Description = "dogshit"
+            //        }
+            //    );
         }
 
         public DbSet<Character> Characters { get; set; }
-        public DbSet<Weapon> Weapons { get; set; }
+        //public DbSet<Weapon> Weapons { get; set; }
 
     }
 }

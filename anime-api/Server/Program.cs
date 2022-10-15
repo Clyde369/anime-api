@@ -1,7 +1,7 @@
 global using animeapi.Shared;
 global using Microsoft.AspNetCore.ResponseCompression;
 global using Microsoft.EntityFrameworkCore;
-using animeapi.Server.Data;
+global using animeapi.Server.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
